@@ -8,10 +8,15 @@
         return $expiration."Z";
     }
 
-    $id= '6MKOqxGiGU4AUk44';
-    $key= 'ufu7nS8kS59awNihtjSonMETLI0KLy';
-    $host = 'http://post-test.oss-cn-hangzhou.aliyuncs.com';
-    $callbackUrl = "http://oss-demo.aliyuncs.com:23450";
+   // $id= '6MKOqxGiGU4AUk44';
+   // $key= 'ufu7nS8kS59awNihtjSonMETLI0KLy';
+  //  $host = 'http://post-test.oss-cn-hangzhou.aliyuncs.com';
+   // $callbackUrl = "http://oss-demo.aliyuncs.com:23450";
+	$id= 'LTAIoBATJDCfocyK';
+    $key= 'Q4nSJXJjIny1Od6WCNWeaYj5ijI1wW';
+    $host ='http://guangin.oss-cn-beijing.aliyuncs.com';
+	$callbackUrl = "http://guangin.club/upload/oss-h5-upload-js-php-callback/php";
+
 
     $callback_param = array('callbackUrl'=>$callbackUrl, 
                  'callbackBody'=>'filename=${object}&size=${size}&mimeType=${mimeType}&height=${imageInfo.height}&width=${imageInfo.width}', 

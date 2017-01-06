@@ -15,7 +15,7 @@
 	$id= 'LTAIoBATJDCfocyK';
     $key= 'Q4nSJXJjIny1Od6WCNWeaYj5ijI1wW';
     $host ='http://guangin.oss-cn-beijing.aliyuncs.com';
-	$callbackUrl = "http://guangin.club/upload/oss-h5-upload-js-php-callback/php";
+	$callbackUrl = "http://guangin.club/upload/oss-h5-upload-js-php-callback/php/get.php";
 
 
     $callback_param = array('callbackUrl'=>$callbackUrl, 
