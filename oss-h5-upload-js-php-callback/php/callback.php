@@ -1,26 +1,26 @@
 <?php
 // 1.获取OSS的签名header和公钥url header
-$authorizationBase64 = "";
-$pubKeyUrlBase64 = "";
+//$authorizationBase64 = "";
+//$pubKeyUrlBase64 = "";
 /*
  * 注意：如果要使用HTTP_AUTHORIZATION头，你需要先在apache或者nginx中设置rewrite，以apache为例，修改
  * 配置文件/etc/httpd/conf/httpd.conf(以你的apache安装路径为准)，在DirectoryIndex index.php这行下面增加以下两行
     RewriteEngine On
     RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization},last]
  * */
-if (isset($_SERVER['HTTP_AUTHORIZATION']))
+/*IF (ISSET($_server['http_authorization']))
 {
-    $authorizationBase64 = $_SERVER['HTTP_AUTHORIZATION'];
+    $AUTHORIZATIONbASE64 = $_server['http_authorization'];
 }
-if (isset($_SERVER['HTTP_X_OSS_PUB_KEY_URL']))
+IF (ISSET($_server['http_x_oss_pub_key_url']))
 {
-    $pubKeyUrlBase64 = $_SERVER['HTTP_X_OSS_PUB_KEY_URL'];
+    $PUBkEYuRLbASE64 = $_server['http_x_oss_pub_key_url'];
 }
 
-if ($authorizationBase64 == '' || $pubKeyUrlBase64 == '')
+IF ($AUTHORIZATIONbASE64 == '' || $PUBkEYuRLbASE64 == '')
 {
-    header("http/1.1 403 Forbidden");
-    exit();
+    HEADER("HTTP/1.1 403 fORBIDDEN");
+    EXIT();
 }
 
 // 2.获取OSS的签名
@@ -67,7 +67,9 @@ else
 {
     //header("http/1.1 403 Forbidden");
     exit();
-}
+}*/
+ $data = array("Status"=>"Ok");
+    echo json_encode($data);
 
 ?>
 
