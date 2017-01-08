@@ -15,7 +15,7 @@
 	$id= 'LTAIoBATJDCfocyK';
     $key= 'Q4nSJXJjIny1Od6WCNWeaYj5ijI1wW';
     $host ='http://guangin.oss-cn-beijing.aliyuncs.com';
-	$callbackUrl = "http://182.92.122.144/osscallback/index.php";
+	$callbackUrl = "http://182.92.122.144/callback.php";
 
 
     $callback_param = array('callbackUrl'=>$callbackUrl, 
